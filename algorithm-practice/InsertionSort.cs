@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace algorithm_practice
 {
-    public class InsertionSort<T> : ISortable<T> where T : IComparable
+    public class InsertionSort : ISortable
     {
         public InsertionSort()
         {
             
         }
 
-        public T[] Sort(T[] array)
+        public T[] Sort<T>(T[] array) where T : IComparable
         {
             for (int curIndex = 0; curIndex < array.Length; curIndex++)
             {
