@@ -8,6 +8,6 @@ namespace algorithm_practice
 {
     interface ISortable
     {
-        public T[] Sort<T>(T[] array);
+        T[] Sort<T>(T[] array);
     }
 }
