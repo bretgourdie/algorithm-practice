@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace algorithm_practice
 {
-    class SelectionSort
+    public class SelectionSort : ISortable
     {
+        public SelectionSort() { }
+
+        public T[] Sort<T>(T[] array)
+        {
+
+            return array;
+        }
     }
 }
