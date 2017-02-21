@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace algorithm_practice
 {
-    interface ISortable<T>
+    interface ISortable
     {
-        public T[] Sort(T[] array);
+        public T[] Sort<T>(T[] array);
     }
 }
