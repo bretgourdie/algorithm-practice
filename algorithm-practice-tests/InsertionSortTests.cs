@@ -20,5 +20,20 @@ namespace algorithm_practice.Tests
 
             CollectionAssert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void SameIntsTest()
+        {
+            var innsort = new InsertionSort();
+
+            var input = new int[] { 4, 2, 3, 2, 5, 3 };
+            var expected = new int[input.Length];
+            Array.Copy(input, expected, input.Length);
+            Array.Sort(expected);
+
+            var result = innsort.Sort<int>(input);
+
+            CollectionAssert.AreEqual(expected, result);
+        }
     }
 }
