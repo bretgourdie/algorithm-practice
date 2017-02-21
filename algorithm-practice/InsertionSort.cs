@@ -17,22 +17,17 @@ namespace algorithm_practice
         {
             for (int curIndex = 0; curIndex < array.Length; curIndex++)
             {
-                var curVal = array[curIndex];
-
-                bool inserted = false;
-                for (int prevIndex = curIndex - 1; prevIndex >= 0 && !inserted; prevIndex--)
+                for (int prevIndex = curIndex - 1; prevIndex >= 0; prevIndex--)
                 {
                     var prevVal = array[prevIndex];
+                    var curVal = array[prevIndex + 1];
 
-                    if (prevVal.CompareTo(curVal) > 0)
+                    var compared = curVal.CompareTo(prevVal);
+
+                    if (compared < 0)
                     {
                         array[prevIndex + 1] = prevVal;
-                    }
-
-                    else if (prevVal.CompareTo(curVal) < 0)
-                    {
-                        array[prevIndex + 1] = curVal;
-                        inserted = true;
+                        array[prevIndex] = curVal;
                     }
                 }
             }
