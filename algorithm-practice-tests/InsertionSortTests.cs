@@ -18,7 +18,7 @@ namespace algorithm_practice.Tests
 
             var result = inssort.Sort<int>(input);
 
-            Assert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, result);
         }
     }
 }
