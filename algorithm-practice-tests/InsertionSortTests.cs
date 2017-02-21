@@ -35,5 +35,20 @@ namespace algorithm_practice.Tests
 
             CollectionAssert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void CharsTest()
+        {
+            var insort = new InsertionSort();
+
+            var input = new char[] { 'c', 'b', 'a' };
+            var expected = new char[input.Length];
+            Array.Copy(input, expected, input.Length);
+            Array.Sort(expected);
+
+            var result = insort.Sort<char>(input);
+
+            CollectionAssert.AreEqual(expected, result);
+        }
     }
 }
