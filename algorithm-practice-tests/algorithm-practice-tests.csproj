@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\algorithm-practice\algorithm-practice.csproj">
+      <Project>{f0457635-4cbe-4935-a1bb-fcbc721c6f52}</Project>
+      <Name>algorithm-practice</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
