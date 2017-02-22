@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace algorithm_practice.Sorts.SortTests
+namespace algorithm_practice.Sorts.Tests
 {
     [TestClass]
     public class BubbleSortTests
