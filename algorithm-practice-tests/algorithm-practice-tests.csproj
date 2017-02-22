@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortTests\InsertionSortTests.cs" />
     <Compile Include="SortTests\SelectionSortTests.cs" />
+    <Compile Include="SortTests\BubbleSortTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\algorithm-practice\algorithm-practice.csproj">
