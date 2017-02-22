@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace algorithm_practice
+namespace algorithm_practice.Sorts
 {
     class RadixSort
     {
