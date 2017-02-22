@@ -39,23 +39,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="A_Star.cs" />
-    <Compile Include="BinarySearch.cs" />
-    <Compile Include="BloomFilter.cs" />
-    <Compile Include="BreadthFirstSearch.cs" />
-    <Compile Include="BubbleSort.cs" />
-    <Compile Include="BucketSort.cs" />
-    <Compile Include="ClosestPair.cs" />
-    <Compile Include="Dijkstras.cs" />
-    <Compile Include="FloydWarshall.cs" />
-    <Compile Include="InPlaceQuickSort.cs" />
-    <Compile Include="InsertionSort.cs" />
-    <Compile Include="ISortable.cs" />
-    <Compile Include="KWayMerge.cs" />
+    <Compile Include="PathFinding\A_Star.cs" />
+    <Compile Include="Searches\BinarySearch.cs" />
+    <Compile Include="Searches\BloomFilter.cs" />
+    <Compile Include="Searches\BreadthFirstSearch.cs" />
+    <Compile Include="Sorts\BubbleSort.cs" />
+    <Compile Include="Sorts\BucketSort.cs" />
+    <Compile Include="PathFinding\ClosestPair.cs" />
+    <Compile Include="PathFinding\Dijkstras.cs" />
+    <Compile Include="PathFinding\FloydWarshall.cs" />
+    <Compile Include="Sorts\InPlaceQuickSort.cs" />
+    <Compile Include="Sorts\InsertionSort.cs" />
+    <Compile Include="Sorts\ISortable.cs" />
+    <Compile Include="Sorts\KWayMerge.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RadixSort.cs" />
-    <Compile Include="SelectionSort.cs" />
-    <Compile Include="TravelingSalesman.cs" />
+    <Compile Include="Sorts\RadixSort.cs" />
+    <Compile Include="Sorts\SelectionSort.cs" />
+    <Compile Include="PathFinding\TravelingSalesman.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
