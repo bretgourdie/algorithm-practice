@@ -9,7 +9,7 @@ namespace algorithm_practice.Sorts
     public class BubbleSort : ISortable
     {
 
-        public T[] Sort<T>(T[] array)
+        public T[] Sort<T>(T[] array) where T : IComparable
         {
             for (int ii = 0; ii < array.Length; ii++)
             {
