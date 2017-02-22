@@ -18,9 +18,11 @@ namespace algorithm_practice.Sorts
 
                 for(int unsortedIndex = curIndex + 1; unsortedIndex < array.Length; unsortedIndex++)
                 {
-                    var compareResult = array[minIndex].CompareTo(array[unsortedIndex]);
+                    var compareResult = CompareHelper.ComparesTo(
+                        array[minIndex], 
+                        array[unsortedIndex]);
 
-                    if(compareResult > 0)
+                    if(compareResult == Comparison.GreaterThan)
                     {
                         minIndex = unsortedIndex;
                     }
