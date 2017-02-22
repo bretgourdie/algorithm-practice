@@ -25,5 +25,19 @@ namespace algorithm_practice.Tests
 
             CollectionAssert.AreEqual(expected, result);
         }
+
+        [TestMethod()]
+        public void SortChars()
+        {
+            var selsort = new SelectionSort();
+            var input = new char[] { 'b', 'a', 'c', 't', 'e', 'd' };
+            var expected = new char[input.Length];
+            Array.Copy(input, expected, input.Length);
+            Array.Sort(expected);
+
+            var result = selsort.Sort<char>(input);
+
+            CollectionAssert.AreEqual(expected, result);
+        }
     }
 }
