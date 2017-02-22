@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompareHelper.cs" />
     <Compile Include="PathFinding\A_Star.cs" />
     <Compile Include="Searches\BinarySearch.cs" />
     <Compile Include="Searches\BloomFilter.cs" />
