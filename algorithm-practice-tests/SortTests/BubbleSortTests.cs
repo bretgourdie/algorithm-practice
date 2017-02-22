@@ -10,6 +10,7 @@ namespace algorithm_practice.Sorts.Tests
         public void BubbleSort_Basic()
         {
             var bsort = new BubbleSort();
+
             var input = new int[] { 6, 5, 3, 1, 8, 7, 2, 4 };
             var expected = new int[input.Length];
             Array.Copy(input, expected, input.Length);
@@ -24,6 +25,7 @@ namespace algorithm_practice.Sorts.Tests
         public void BubbleSort_SameIntsTest()
         {
             var bsort = new BubbleSort();
+
             var input = new int[] { 7, 2, 4, 3, 1, 4, 5, 2, 4 };
             var expected = new int[input.Length];
             Array.Copy(input, expected, input.Length);
