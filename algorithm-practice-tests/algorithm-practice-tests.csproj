@@ -51,14 +51,18 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="InsertionSortTests.cs" />
-    <Compile Include="SelectionSortTests.cs" />
+    <Compile Include="SortTests\InsertionSortTests.cs" />
+    <Compile Include="SortTests\SelectionSortTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\algorithm-practice\algorithm-practice.csproj">
       <Project>{f0457635-4cbe-4935-a1bb-fcbc721c6f52}</Project>
       <Name>algorithm-practice</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PathFindingTests\" />
+    <Folder Include="SearchTests\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
