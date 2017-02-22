@@ -22,9 +22,9 @@ namespace algorithm_practice.Sorts
                     var prevVal = array[prevIndex];
                     var curVal = array[prevIndex + 1];
 
-                    var compared = curVal.CompareTo(prevVal);
+                    var compareResult = CompareHelper.ComparesTo(curVal, prevVal);
 
-                    if (compared < 0)
+                    if (compareResult == Comparison.LessThan)
                     {
                         array[prevIndex + 1] = prevVal;
                         array[prevIndex] = curVal;
