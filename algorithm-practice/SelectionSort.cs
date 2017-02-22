@@ -22,7 +22,7 @@ namespace algorithm_practice
                 for(int unsortedIndex = curIndex + 1; unsortedIndex < array.Length; unsortedIndex++)
                 {
                     var unsortedValue = array[unsortedIndex];
-                    var compareResult = curValue.CompareTo(unsortedValue);
+                    var compareResult = minValue.CompareTo(unsortedValue);
 
                     if(compareResult > 0)
                     {
