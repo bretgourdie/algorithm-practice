@@ -38,5 +38,19 @@ namespace algorithm_practice.Tests
 
             CollectionAssert.AreEqual(expected, result);
         }
+
+        [TestMethod()]
+        public void SelectionSort_SameValsTest()
+        {
+            var selsort = new SelectionSort();
+            var input = new int[] { 5, 2, 4, 3, 3, 2, 1 };
+            var expected = new int[input.Length];
+            Array.Copy(input, expected, input.Length);
+            Array.Sort(expected);
+
+            var result = selsort.Sort<int>(input);
+
+            CollectionAssert.AreEqual(expected, result);
+        }
     }
 }
