@@ -14,25 +14,21 @@ namespace algorithm_practice
         {
             for(int curIndex = 0; curIndex < array.Length; curIndex++)
             {
-                var curValue = array[curIndex];
-
-                var minValue = curValue;
                 var minIndex = curIndex;
 
                 for(int unsortedIndex = curIndex + 1; unsortedIndex < array.Length; unsortedIndex++)
                 {
-                    var unsortedValue = array[unsortedIndex];
-                    var compareResult = minValue.CompareTo(unsortedValue);
+                    var compareResult = array[minIndex].CompareTo(array[unsortedIndex]);
 
                     if(compareResult > 0)
                     {
-                        minValue = unsortedValue;
                         minIndex = unsortedIndex;
                     }
                 }
 
-                array[minIndex] = curValue;
-                array[curIndex] = minValue;
+                var temp = array[minIndex];
+                array[minIndex] = array[curIndex];
+                array[curIndex] = temp;
             }
 
             return array;
