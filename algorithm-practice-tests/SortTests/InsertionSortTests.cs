@@ -16,7 +16,7 @@ namespace algorithm_practice.Sorts.Tests
             Array.Copy(input, expected, input.Length);
             Array.Sort(expected);
 
-            var result = inssort.Sort<int>(input);
+            var result = inssort.Sort(input);
 
             CollectionAssert.AreEqual(expected, result);
         }
@@ -31,7 +31,7 @@ namespace algorithm_practice.Sorts.Tests
             Array.Copy(input, expected, input.Length);
             Array.Sort(expected);
 
-            var result = innsort.Sort<int>(input);
+            var result = innsort.Sort(input);
 
             CollectionAssert.AreEqual(expected, result);
         }
@@ -46,7 +46,7 @@ namespace algorithm_practice.Sorts.Tests
             Array.Copy(input, expected, input.Length);
             Array.Sort(expected);
 
-            var result = insort.Sort<char>(input);
+            var result = insort.Sort(input);
 
             CollectionAssert.AreEqual(expected, result);
         }
