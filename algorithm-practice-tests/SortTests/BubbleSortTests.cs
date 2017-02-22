@@ -7,7 +7,7 @@ namespace algorithm_practice.Sorts.Tests
     public class BubbleSortTests
     {
         [TestMethod]
-        public void BubbleSort_Basic()
+        public void BubbleSort_BasicTest()
         {
             var bsort = new BubbleSort();
 
