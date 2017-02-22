@@ -12,7 +12,7 @@ namespace algorithm_practice.Tests
     public class SelectionSortTests
     {
         [TestMethod()]
-        public void SelectionSort_Basic()
+        public void SelectionSort_BasicTest()
         {
             var selsort = new SelectionSort();
             var input = new int[] { 5, 2, 7, 1, 4, 3 };
@@ -26,7 +26,7 @@ namespace algorithm_practice.Tests
         }
 
         [TestMethod()]
-        public void SelectionSort_Chars()
+        public void SelectionSort_CharsTest()
         {
             var selsort = new SelectionSort();
             var input = new char[] { 'b', 'a', 'c', 't', 'e', 'd' };
