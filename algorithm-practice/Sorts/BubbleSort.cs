@@ -15,7 +15,7 @@ namespace algorithm_practice.Sorts
             {
                 for (int jj = 0; jj < array.Length - ii - 1; jj++)
                 {
-                    var result = CompareHelper.ComparesTo<T>(
+                    var result = CompareHelper.ComparesTo(
                         array[jj],
                         array[jj + 1]);
 
