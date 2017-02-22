@@ -7,7 +7,7 @@ namespace algorithm_practice.Tests
     public class InsertionSortTests
     {
         [TestMethod]
-        public void BasicIntsTest()
+        public void InsertionSort_BasicTest()
         {
             var inssort = new InsertionSort();
 
@@ -22,7 +22,7 @@ namespace algorithm_practice.Tests
         }
 
         [TestMethod]
-        public void SameIntsTest()
+        public void InsertionSort_SameIntsTest()
         {
             var innsort = new InsertionSort();
 
@@ -37,7 +37,7 @@ namespace algorithm_practice.Tests
         }
 
         [TestMethod]
-        public void CharsTest()
+        public void InsertionSort_CharsTest()
         {
             var insort = new InsertionSort();
 
