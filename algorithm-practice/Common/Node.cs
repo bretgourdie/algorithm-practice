@@ -8,12 +8,39 @@ namespace algorithm_practice.Common
 {
     public class Node<T>
     {
-        public T Data { get; protected set; }
-        Node<T> next { get; set; }
+        private T data;
+        private NodeList<T> neighbors = null;
 
-        public Node(T data)
+        public Node() { }
+        public Node(T data) : this(data, null) { }
+        public Node(T data, NodeList<T> neighbors)
         {
-            this.Data = data;
+            this.data = data;
+            this.neighbors = neighbors;
+        }
+
+        public T Value
+        {
+            get
+            {
+                return data;
+            }
+            set
+            {
+                data = value;
+            }
+        }
+
+        protected NodeList<T> Neighbords
+        {
+            get
+            {
+                return neighbors;
+            }
+            set
+            {
+                neighbors = value;
+            }
         }
     }
 }
