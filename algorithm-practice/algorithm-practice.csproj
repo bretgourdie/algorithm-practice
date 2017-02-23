@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\NodeList.cs" />
     <Compile Include="CompareHelper.cs" />
     <Compile Include="Common\Node.cs" />
     <Compile Include="PathFinding\A_Star.cs" />
