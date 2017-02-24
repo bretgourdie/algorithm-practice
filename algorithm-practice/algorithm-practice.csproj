@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Common\BinaryTree.cs" />
     <Compile Include="Common\BinaryTreeNode.cs" />
+    <Compile Include="Common\GraphNode.cs" />
     <Compile Include="Common\NodeList.cs" />
     <Compile Include="CompareHelper.cs" />
     <Compile Include="Common\Node.cs" />
