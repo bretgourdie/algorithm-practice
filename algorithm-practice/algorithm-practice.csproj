@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\BinaryTree.cs" />
     <Compile Include="Common\BinaryTreeNode.cs" />
     <Compile Include="Common\NodeList.cs" />
     <Compile Include="CompareHelper.cs" />
