@@ -20,7 +20,7 @@ namespace algorithm_practice.Common
             children[0] = left;
             children[1] = right;
 
-            base.Neighbords = children;
+            base.Neighbors = children;
         }
 
         public BinaryTreeNode<T> Left 
@@ -55,25 +55,25 @@ namespace algorithm_practice.Common
 
         private BinaryTreeNode<T> _getNode(Child child)
         {
-            if (base.Neighbords == null)
+            if (base.Neighbors == null)
             {
                 return null;
             }
             else
             {
                 var index = _getChildIndex(child);
-                return (BinaryTreeNode<T>)base.Neighbords[index];
+                return (BinaryTreeNode<T>)base.Neighbors[index];
             }
         }
 
         private void _setNode(Child child, BinaryTreeNode<T> value)
         {
-            if (base.Neighbords == null)
+            if (base.Neighbors == null)
             {
-                base.Neighbords = new NodeList<T>(2);
+                base.Neighbors = new NodeList<T>(2);
             }
             var index = _getChildIndex(child);
-            base.Neighbords[index] = value;
+            base.Neighbors[index] = value;
         }
 
         private int _getChildIndex(Child child)

@@ -31,7 +31,7 @@ namespace algorithm_practice.Common
             }
         }
 
-        protected NodeList<T> Neighbords
+        protected NodeList<T> Neighbors
         {
             get
             {
