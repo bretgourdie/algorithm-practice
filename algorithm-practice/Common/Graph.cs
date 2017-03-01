@@ -34,10 +34,48 @@ namespace algorithm_practice.Common
             this.AddNode(node);
         }
 
+        // Directed /////////////////
+
+        public void AddDirectedEdge(T from, T to)
+        {
+            this.AddDirectedEdge(from, to, 0);
+        }
+
+        public void AddDirectedEdge(T from, T to, int cost)
+        {
+            var fromNode = new GraphNode<T>(from);
+            var toNode = new GraphNode<T>(to);
+            this.AddDirectedEdge(fromNode, toNode, cost);
+        }
+
+        public void AddDirectedEdge(GraphNode<T> from, GraphNode<T> to)
+        {
+            this.AddDirectedEdge(from, to, 0);
+        }
+
         public void AddDirectedEdge(GraphNode<T> from, GraphNode<T> to, int cost)
         {
             from.Neighbors.Add(to);
             from.Costs.Add(cost);
+        }
+
+        // Undirected ///////////////
+
+        public void AddUndirectedEdge(T from, T to)
+        {
+            this.AddUndirectedEdge(from, to, 0);
+        }
+
+        public void AddUndirectedEdge(T from, T to, int cost)
+        {
+            var fromNode = new GraphNode<T>(from);
+            var toNode = new GraphNode<T>(to);
+            this.AddUndirectedEdge(from, to, cost);
+        }
+
+        public void AddUndirectedEdge(GraphNode<T> from, GraphNode<T> to)
+        {
+            this.AddUndirectedEdge(from, to, 0);
         }
 
         public void AddUndirectedEdge(GraphNode<T> from, GraphNode<T> to, int cost)
