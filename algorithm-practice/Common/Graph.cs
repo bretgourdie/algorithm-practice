@@ -93,6 +93,11 @@ namespace algorithm_practice.Common
             return found;
         }
 
+        public bool Remove(GraphNode<T> node)
+        {
+            return this.Remove(node.Value);
+        }
+
         public bool Remove(T value)
         {
             var nodeToRemove = (GraphNode<T>)nodeSet.FindByValue(value);
